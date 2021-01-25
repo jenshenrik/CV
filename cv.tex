@@ -1,0 +1,107 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.77]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Andreas}{Frisch}
+\title{Age 33, Danish}                               % optional, remove / comment the line if not wanted
+\address{Hovgaardsgade 7, 4tv}{2100 København Ø}{Denmark}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+45~30206192}                   % optional, , remove / comment the line if not wanted
+\email{andreas.frisch@gmail.com}                               %  remove / comment the line if not wanted
+
+\begin{document}
+\makecvtitle
+
+\section{Knowledge Areas}
+\cvitem{Programming}{Python, Scala, Haskell, AngularJS, Swift, SQL}
+\cvitem{Development}{Git, Continuous Integration, Agile, Waterfall, Testing, AWS}
+\cvitem{Other}{Quality Management Systems, GAMP 5, Audits}
+
+\section{Work Experience}
+\cventry{2020--}{Security and Software Lead}{Studies\&Me}{Copenhagen}{}{
+	Overseeing development of both frontends and backends in Studies\&Me with responsibility for delivering software on time, assisting in planning software deliveries, helping build the Studies\&Me Quality Management System, and managing day-to-day software security and operations.
+	\newline \textit{Main learnings: People Management, Project Management, Politics, Quality Systems, Audits.}
+}
+\cventry{2016--2020}{Software Developer}{LEO Innovation Lab}{Copenhagen}{}{
+	Part of the Core Services team developing common backend features for use in all the projects throughout the organisation.
+	\newline \textit{Main learnings: Scala, AWS, Microservices, Project Management.}
+}
+\cventry{2014--2016}{Consultant}{Trifork}{London}{}{
+	Working primarily with American customers and on the internal project The Perfect App.
+	\newline \textit{Main learnings: AngularJS, Project Management.}
+}
+\cventry{2012--2014}{Junior Consultant}{IT Minds}{Copenhagen}{}{
+	Providing software solutions for customers such as Mærsk and Copenhagen University.
+	\newline \textit{Main learnings: Customer relations, company politics.}
+}
+\cventry{2011--2012}{IT Support}{Copenhagen University}{Copenhagen}{}{
+	General IT support as well as server maintenance, server acquisition, and daily operation.
+	\newline \textit{Main learnings: Server maintenance, patience.}
+}
+\cventry{2009--2010}{Developer}{Copenhagen University}{Copenhagen}{}{
+	Developing prototypes for the CITH and ESICT projects.
+	\newline \textit{Main learnings: Customer relations, backend design, Django.}
+}
+\cventry{2008--2009}{Trainee Security Consultant}{Digicure}{Kgs Lyngby}{}{
+	Supporting senior consultants analysing network traffic and penetration test results.
+}
+
+\section{Extracurricular Activities}
+\cventry{2018--}{App Developer}{FreezerButler}{}{}{
+	Primary frontend developer for FreezerButler developing an app to help prevent food waste by allowing you to track food you have in your fridge and suggest new recipes using your leftovers.
+	\newline \textit{Main learnings: Swift, App development processes, React Native}
+}
+\cventry{2017--2018}{Teacher}{Coding Pirates}{}{}{
+	Volunteering to teach kids aged 8 to 15 how to code. This was achieved primarily in Scratch but Javascript and Python also played a part.
+}
+\cventry{2015--2016}{Teacher}{GOTO Academy Amsterdam}{}{\textit{AngularJS}}{
+	While working for Trifork I taught several courses on AngularJS.
+	Each course took four days -- covering everything from HTML and simple bindings to interlinked components.
+}
+
+\cventry{2010--2014}{Teacher's Assistant}{Copenhagen University}{}{\textit{Functional Programming} and \textit{Object Oriented Engineering}}{
+	Object Oriented Engineering had little to do with actual programming, focusing instead on all the softer aspects of delivering a successful software project such as requirement specification, planning, and documentation.
+}
+
+\section{Education}
+\cventry{2007--2014}{Bachelor + Masters}{Copenhagen University}{Copenhagen - Denmark}{\textit{Computer Science}}{}
+\cventry{2020}{Course}{Concept Heidelberg}{Online}{\textit{Computerized System Validation: The GAMP 5 Approach}}{}
+
+\section{Languages}
+\cvitemwithcomment{Danish}{Native}{}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{French}{Still trying}{}
+
+\section{About me}
+\cvitem{}{
+	I am a problem solver at heart and I am easily distracted -- or at worst annoyed -- by suboptimal solutions to problems which have immediately obvious better solutions available.
+	However, especially when considering programming problems I find it is important to not strife for perfection but rather consider continuous usefulness improvements.
+	This balance is the crux of project management as I see it, and I enjoy being on either side of that discussion.
+	\newline I love learning new tidbits of knowledge in many different fields.
+	Whether picking up guitar chords or acquiring programming knowledge, the simple act of improving overall knowledge is fulfilling to me.
+	This makes me less of a specialist and more of a jack-of-all-trades, but I consider that a strength in most situations when interacting with different people from different fields.
+	\newline I enjoy people and spend quite a lot of time socialising -- preferably over board games with a gin and tonic in hand.
+}
+\clearpage
+\end{document}
